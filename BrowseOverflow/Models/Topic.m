@@ -9,5 +9,11 @@
 #import "Topic.h"
 
 @implementation Topic
-
+-(id)initWithName:(NSString *)newName
+{
+    if ((self = [super init])) {
+        _name = [newName copy];
+    }
+    return self;
+}
 @end

@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Topic : NSObject
-
+@property (readonly) NSString *name;
+-(id)initWithName:(NSString *)newName;
 @end
