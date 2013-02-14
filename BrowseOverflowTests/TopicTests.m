@@ -25,4 +25,9 @@
     STAssertEqualObjects(namedTopic.name, @"iPhone", @"The Topic should have the name I gave it");
 }
 
+-(void)testThatTopicHasATag {
+    Topic *taggedTopic = [[Topic alloc] initWithName:@"iPhone" tag:@"iPhone"];
+    STAssertEqualObjects(taggedTopic.tag, @"iPhone", @"Topics need to have tags");
+}
+
 @end
