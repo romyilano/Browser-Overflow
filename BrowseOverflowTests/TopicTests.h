@@ -9,6 +9,10 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
 
+@class Topic;
 @interface TopicTests : SenTestCase
+{
+    Topic *topic;
+}
 
 @end

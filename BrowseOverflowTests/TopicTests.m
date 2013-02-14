@@ -10,51 +10,44 @@
 #import "Topic.h"
 
 @interface TopicTests ()
-{
-    Topic *topic;
-}
 
 @end
 
 @implementation TopicTests
 
+// we want to use the same instance across the tests, defined as part of the fixture
+// we'll create a single topic instance in -setUp; and use it in every test, clean it up in tearDown:
 
+-(void)setUp
+{
+    topic = [[Topic alloc] initWithName:@"iPhone" tag:@"iphone"];
+    
+}
+
+-(void)tearDown{
+    // test fixture's Topic is set to nil so that the different tests each get a fresh instance
+    topic = nil;
+}
+
+-(void)testForAListOfQuestions
+{
+    STAssertTrue([[topic recentQuestions] isKindOfClass:[NSArray class]], @"Topics should provide a list of recent questions");
+    
+}
 // refactoring
 -(void)testThatTopicExists
 {
-    Topic *newTopic = [[Topic alloc] initWithName:@"iPhone" tag:@"iphone"];
-    STAssertNotNil(newTopic, @"should be able to create a Topic instance");
+    STAssertNotNil(topic, @"Should be able to create a Topic instance");
 }
 
--(void)testThatTopicCanBeName
+-(void)testThatTopicCanBeNamed
 {
-    Topic *namedTopic = [[Topic alloc] initWithName:@"iPhone" tag:@"iphone"];
-    STAssertNotNil(namedTopic.name, @"iPhone", @"The Topic should have a name I gave it");
+    STAssertEqualObjects(topic.name, @"iPhone", @"the Topic should have the name I gave it");
 }
 
 -(void)testThatTopicHasATag
 {
-    Topic *taggedTopic = [[Topic alloc] initWithName:@"iPhone" tag:@"iphone"];
-    STAssertEqualObjects(taggedTopic.tag, @"iphone", @"Topics need to have tags");
+    STAssertEqualObjects(topic.tag, @"iphone", @"The topic should have the tag I gave it");
 }
-/*
-// this tests that the app provides a topic class
--(void)testThatTopicExists
-{
-    Topic *newTopic = [[Topic alloc] init];
-    STAssertNotNil(newTopic, @"Should be able to create a Topic instance");
-}
-
--(void)testThatTopicCanBeName
-{
-    Topic *namedTopic = [[Topic alloc] initWithName:@"iPhone"];
-    STAssertEqualObjects(namedTopic.name, @"iPhone", @"The Topic should have the name I gave it");
-}
-
--(void)testThatTopicHasATag {
-    Topic *taggedTopic = [[Topic alloc] initWithName:@"iPhone" tag:@"iPhone"];
-    STAssertEqualObjects(taggedTopic.tag, @"iPhone", @"Topics need to have tags");
-}
- */
 
 @end
