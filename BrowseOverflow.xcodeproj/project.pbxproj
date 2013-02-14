@@ -23,7 +23,6 @@
 		9EAAF98816CCB33C00212732 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAAF95F16CCB33B00212732 /* UIKit.framework */; };
 		9EAAF98916CCB33C00212732 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAAF96116CCB33B00212732 /* Foundation.framework */; };
 		9EAAF99116CCB33C00212732 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAF98F16CCB33C00212732 /* InfoPlist.strings */; };
-		9EAAF99416CCB33C00212732 /* BrowseOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAF99316CCB33C00212732 /* BrowseOverflowTests.m */; };
 		9EAAF99E16CCB42200212732 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAF99D16CCB42200212732 /* README.md */; };
 		9EAAF99F16CCB42200212732 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAF99D16CCB42200212732 /* README.md */; };
 /* End PBXBuildFile section */
@@ -61,8 +60,6 @@
 		9EAAF98616CCB33C00212732 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9EAAF98E16CCB33C00212732 /* BrowseOverflowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseOverflowTests-Info.plist"; sourceTree = "<group>"; };
 		9EAAF99016CCB33C00212732 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9EAAF99216CCB33C00212732 /* BrowseOverflowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseOverflowTests.h; sourceTree = "<group>"; };
-		9EAAF99316CCB33C00212732 /* BrowseOverflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseOverflowTests.m; sourceTree = "<group>"; };
 		9EAAF99D16CCB42200212732 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,8 +150,6 @@
 		9EAAF98C16CCB33C00212732 /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
-				9EAAF99216CCB33C00212732 /* BrowseOverflowTests.h */,
-				9EAAF99316CCB33C00212732 /* BrowseOverflowTests.m */,
 				9EAAF98D16CCB33C00212732 /* Supporting Files */,
 			);
 			path = BrowseOverflowTests;
@@ -292,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAAF99416CCB33C00212732 /* BrowseOverflowTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
