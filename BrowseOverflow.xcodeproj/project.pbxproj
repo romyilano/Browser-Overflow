@@ -25,6 +25,9 @@
 		9EAAF99116CCB33C00212732 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAF98F16CCB33C00212732 /* InfoPlist.strings */; };
 		9EAAF99E16CCB42200212732 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAF99D16CCB42200212732 /* README.md */; };
 		9EAAF99F16CCB42200212732 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAF99D16CCB42200212732 /* README.md */; };
+		9EAAF9A216CCBB5B00212732 /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAF9A116CCBB5B00212732 /* TopicTests.m */; };
+		9EAAF9A716CCBCF400212732 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAF9A616CCBCF400212732 /* Topic.m */; };
+		9EAAF9A816CCBCF400212732 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAF9A616CCBCF400212732 /* Topic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,10 @@
 		9EAAF98E16CCB33C00212732 /* BrowseOverflowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseOverflowTests-Info.plist"; sourceTree = "<group>"; };
 		9EAAF99016CCB33C00212732 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9EAAF99D16CCB42200212732 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9EAAF9A016CCBB5B00212732 /* TopicTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicTests.h; sourceTree = "<group>"; };
+		9EAAF9A116CCBB5B00212732 /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTests.m; sourceTree = "<group>"; };
+		9EAAF9A516CCBCF400212732 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Topic.h; path = Models/Topic.h; sourceTree = "<group>"; };
+		9EAAF9A616CCBCF400212732 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Topic.m; path = Models/Topic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,11 +130,8 @@
 			children = (
 				9EAAF96E16CCB33B00212732 /* AppDelegate.h */,
 				9EAAF96F16CCB33B00212732 /* AppDelegate.m */,
-				9EAAF97716CCB33B00212732 /* MainStoryboard.storyboard */,
-				9EAAF97A16CCB33B00212732 /* MasterViewController.h */,
-				9EAAF97B16CCB33B00212732 /* MasterViewController.m */,
-				9EAAF97D16CCB33B00212732 /* DetailViewController.h */,
-				9EAAF97E16CCB33B00212732 /* DetailViewController.m */,
+				9EAAF9A416CCBCCD00212732 /* =Models */,
+				9EAAF9A316CCBCC700212732 /* =GUI */,
 				9EAAF96616CCB33B00212732 /* Supporting Files */,
 			);
 			path = BrowseOverflow;
@@ -150,6 +154,8 @@
 		9EAAF98C16CCB33C00212732 /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
+				9EAAF9A016CCBB5B00212732 /* TopicTests.h */,
+				9EAAF9A116CCBB5B00212732 /* TopicTests.m */,
 				9EAAF98D16CCB33C00212732 /* Supporting Files */,
 			);
 			path = BrowseOverflowTests;
@@ -162,6 +168,27 @@
 				9EAAF98F16CCB33C00212732 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EAAF9A316CCBCC700212732 /* =GUI */ = {
+			isa = PBXGroup;
+			children = (
+				9EAAF97716CCB33B00212732 /* MainStoryboard.storyboard */,
+				9EAAF97A16CCB33B00212732 /* MasterViewController.h */,
+				9EAAF97B16CCB33B00212732 /* MasterViewController.m */,
+				9EAAF97D16CCB33B00212732 /* DetailViewController.h */,
+				9EAAF97E16CCB33B00212732 /* DetailViewController.m */,
+			);
+			name = "=GUI";
+			sourceTree = "<group>";
+		};
+		9EAAF9A416CCBCCD00212732 /* =Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EAAF9A516CCBCF400212732 /* Topic.h */,
+				9EAAF9A616CCBCF400212732 /* Topic.m */,
+			);
+			name = "=Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +307,7 @@
 				9EAAF97016CCB33B00212732 /* AppDelegate.m in Sources */,
 				9EAAF97C16CCB33B00212732 /* MasterViewController.m in Sources */,
 				9EAAF97F16CCB33B00212732 /* DetailViewController.m in Sources */,
+				9EAAF9A716CCBCF400212732 /* Topic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +315,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EAAF9A216CCBB5B00212732 /* TopicTests.m in Sources */,
+				9EAAF9A816CCBCF400212732 /* Topic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
